@@ -1,24 +1,13 @@
-import { Routes, Route, Link } from "react-router-dom";
-import Home from "./pages/Home";
-import About from "./pages/About";
+import { Routes, Route, Navigate } from "react-router-dom";
+import Dashboard from "./pages/Dashboard";
 
-function App() {
+const App = () => {
   return (
-    <div className="p-4">
-      <nav className="space-x-4 mb-4">
-        <Link to="/" className="text-blue-500">
-          Home
-        </Link>
-        <Link to="/about" className="text-blue-500">
-          About
-        </Link>
-      </nav>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-      </Routes>
-    </div>
+    <Routes>
+      <Route path="/" element={<Navigate to="/dashboard" />} />
+      <Route path="/dashboard" element={<Dashboard />} />
+    </Routes>
   );
-}
+};
 
 export default App;
