@@ -31,7 +31,7 @@ const Navbar = () => {
      rounded-3xl transition-colors sm:px-4 md:px-6 lg:px-8"
     >
       <h1 className="text-xl font-semibold text-gray-700 dark:text-white">
-        Hello Bhaila
+        Hello User
       </h1>
 
       <div className="flex items-center gap-6">
